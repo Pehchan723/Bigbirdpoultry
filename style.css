@@ -1,5 +1,3 @@
-
-
 /* Reset and base styles */
 * {
     margin: 0;
@@ -28,6 +26,38 @@ body {
     width: 100%;
     animation: fadeInDown 1s ease-in-out;
 }
+.header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-top img {
+    max-width: 80px; /* Adjust logo size */
+    height: auto;
+}
+
+.header-top div {
+    margin-top: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: center; /* Adjust alignment: center, space-between, etc. */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Adjust as per your design */
+}
+
+
 
 .header {
     display: flex;
@@ -200,6 +230,20 @@ body {
     text-align: center;
     color: white;
     padding: 200px;
+}
+.hero-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -471,6 +515,25 @@ footer::after {
     bottom: -50px;
     right: -50px;
 }
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+footer div {
+    width: 100%;  /* Ensures content stacks properly */
+}
+@media (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+    .footer-column {
+        text-align: center;
+    }
+}
 
 /* Animations */
 @keyframes floating {
@@ -497,7 +560,6 @@ footer::after {
     font-family: Arial, sans-serif;
 }
 
-<style>
   body {
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -635,4 +697,205 @@ footer::after {
       font-size: 2rem;
     }
   }
-</style>
+  .booking-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .booking-section {
+      flex-direction: column;
+    }
+  }
+  
+  .product-carousel {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 400px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #007bff;
+  }
+  
+  .booking-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .products-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-item:last-child {
+    border-bottom: none;
+  }
+  
+  .product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  .quantity-input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .selected-products {
+    margin-top: 20px;
+  }
+  
+  .selected-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .selected-item button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  html {
+    scroll-behavior: smooth;
+}

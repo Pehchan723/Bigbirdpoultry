@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Application - BigBird Poultry</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Foda+Display&family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500&family=Roboto:wght@300;400;700&family=Lobster&family=Anton&family=Great+Vibes&family=Bebas+Neue&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trade.css">
+</head>
+<body>
+    <!-- Purple line outside of sticky container -->
+    <div class="header-top"></div>
+
+    <!-- Sticky container starts here -->
+    <div class="sticky-container">
+        <!-- Header with Logo and Contact Info -->
+        <header class="header">
+            <div class="logo">
+                <img src="/api/placeholder/200/100" alt="BIG BIRD Poultry Logo">
+            </div>
+            <div class="contact-info">
+                <p>Phone: <a href="tel:01234567890">01234 567890</a> Email: <a href="mailto:info@bigbirdpoultry.co.uk">info@bigbirdpoultry.co.uk</a></p>
+            </div>
+        </header>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Products</a>
+        
+    </div>
+
+    <!-- Page Title -->
+    <h1 class="page-title">TRADE APPLICATION</h1>
+    <p class="subtitle">Join our network of trusted retailers and get wholesale benefits</p>
+
+    <!-- Trade Application Section -->
+    <section class="trade-application">
+        <!-- Left side - Application Form -->
+        <div class="application-form">
+            <h2>Wholesale Account Application</h2>
+            <form id="tradeApplicationForm">
+                <!-- Business Information -->
+                <div class="form-group">
+                    <label for="businessName">Business/Shop Name *</label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="businessType">Business Type *</label>
+                    <select id="businessType" name="businessType" required>
+                        <option value="">Select business type</option>
+                        <option value="butcher">Butcher Shop</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="cafe">Café</option>
+                        <option value="supermarket">Supermarket</option>
+                        <option value="groceryStore">Grocery Store</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="cateringCompany">Catering Company</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="businessAddress">Business Address *</label>
+                    <input type="text" id="businessAddress" name="businessAddress" placeholder="Street Address" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="businessCity" name="businessCity" placeholder="City" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="businessPostcode" name="businessPostcode" placeholder="Postcode" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="vatNumber">VAT Registration Number (if applicable)</label>
+                    <input type="text" id="vatNumber" name="vatNumber">
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="form-group">
+                    <label for="contactName">Contact Person's Name *</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position/Title *</label>
+                    <input type="text" id="position" name="position" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactPhone">Phone Number *</label>
+                    <input type="tel" id="contactPhone" name="contactPhone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                
+                <!-- Order Details -->
+                <div class="form-group">
+                    <label for="estimatedOrderValue">Estimated Weekly Order Value (£) *</label>
+                    <select id="estimatedOrderValue" name="estimatedOrderValue" required>
+                        <option value="">Select range</option>
+                        <option value="under500">Under £500</option>
+                        <option value="500to1000">£500 - £1,000</option>
+                        <option value="1000to3000">£1,000 - £3,000</option>
+                        <option value="3000to5000">£3,000 - £5,000</option>
+                        <option value="over5000">Over £5,000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferredDeliveryDay">Preferred Delivery Days (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="monday" name="deliveryDays" value="Monday">
+                            <label for="monday">Monday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="tuesday" name="deliveryDays" value="Tuesday">
+                            <label for="tuesday">Tuesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wednesday" name="deliveryDays" value="Wednesday">
+                            <label for="wednesday">Wednesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="thursday" name="deliveryDays" value="Thursday">
+                            <label for="thursday">Thursday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="friday" name="deliveryDays" value="Friday">
+                            <label for="friday">Friday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="saturday" name="deliveryDays" value="Saturday">
+                            <label for="saturday">Saturday</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Products Interest -->
+                <div class="form-group">
+                    <label>Products of Interest (Select all that apply)</label>
+                    
+                    <div class="product-category">
+                        <h3>Chicken Products</h3>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="wholeChicken" name="products" value="Whole Chicken">
+                                <label for="wholeChicken">Whole Free Range Chicken</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="chickenBreasts" name="products" value="Chicken Breasts">
+                                <label for="chickenBreasts">Chicken Breasts</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="chickenThighs" name="products" value="Chicken Thighs">
+                                <label for="chickenThighs">Chicken Thighs</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="chickenWings" name="products" value="Chicken Wings">
+                                <label for="chickenWings">Chicken Wings</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="chickenSausages" name="products" value="Chicken Sausages">
+                                <label for="chickenSausages">Chicken Sausages</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-category">
+                        <h3>Other Poultry Products</h3>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="duck" name="products" value="Duck">
+                                <label for="duck">Organic Duck</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="turkey" name="products" value="Turkey">
+                                <label for="turkey">Turkey</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="eggs" name="products" value="Eggs">
+                                <label for="eggs">Farm Fresh Eggs</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="quailEggs" name="products" value="Quail Eggs">
+                                <label for="quailEggs">Quail Eggs</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information or Special Requirements</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                </div>
+                
+                <div class="checkbox-item">
+                    <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                    <label for="termsAgree">I agree to BIG BIRD Poultry's terms and conditions *</label>
+                </div>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        
+        <!-- Right side - Benefits -->
+        <div class="application-benefits">
+            <div class="benefit-card">
+                <h3>Wholesale Benefits</h3>
+                <p>By becoming a BIG BIRD Poultry trade partner, you'll enjoy exclusive benefits including:</p>
+                <ul>
+                    <li>Competitive wholesale pricing</li>
+                    <li>Volume-based discounts</li>
+                    <li>Reliable just-in-time delivery</li>
+                    <li>Full traceability and quality assurance</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Quality Guarantee</h3>
+                <p>All our poultry products are sourced from trusted farms with the highest welfare standards. We guarantee:</p>
+                <ul>
+                    <li>Farm fresh, never frozen products</li>
+                    <li>Free-range and organic options</li>
+                    <li>Full compliance with food safety regulations</li>
+                    <li>Consistent quality and portion sizing</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Flexible Delivery Options</h3>
+                <p>We understand that every business has unique needs:</p>
+                <ul>
+                    <li>Choose your preferred delivery days</li>
+                    <li>Morning or afternoon delivery slots</li>
+                    <li>Temperature-controlled vehicles</li>
+                    <li>Same-day emergency deliveries available</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <!-- Left Section -->
+            <div class="footer-section">
+                <h3>Our Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Job Application</a></li>
+                    <li><a href="#">EU Factory Expansion</a></li>
+                    <li><a href="#">Trade Account Application</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Gender Pay Gap</a></li>
+                    <li><a href="#">Modern Slavery Statement</a></li>
+                </ul>
+            </div>
+        
+            <!-- Middle Section -->
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Whole Chicken</a></li>
+                    <li><a href="#">Chicken Legs</a></li>
+                    <li><a href="#">Chicken Drumsticks</a></li>
+                    <li><a href="#">Chicken Thigh</a></li>
+                    <li><a href="#">Leg Meat</a></li>
+                    <li><a href="#">Fillet</a></li>
+                    <li><a href="#">Wings</a></li>
+                    <li><a href="#">Liver</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section certifications">
+                <h3>Certifications</h3>
+                <div class="certifications-logos">
+                    <img src="Asset/certified-logo.jpg" alt="Certified Standards">
+                    <img src="Asset/award-logo.webp" alt="Award Winner">
+        
+        <div class="footer-bottom">
+            © 2025 BIGBIRD Poultry | All Rights Reserved
+        </div>
+        
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tradeApplicationForm = document.getElementById('tradeApplicationForm');
+            
+            tradeApplicationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to your server
+                // For demonstration, we'll just show a success message
+                alert('Your trade application has been submitted successfully! Our team will contact you within 2 business days to discuss next steps.');
+                
+                // Reset form
+                tradeApplicationForm.reset();
+            });
+            
+            // Add scroll animation for benefit cards
+            const benefitCards = document.querySelectorAll('.benefit-card');
+            
+            function checkScroll() {
+                benefitCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (cardPosition < screenPosition) {
+                        card.style.opacity = 1;
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Set initial state
+            benefitCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Check on load and scroll
+            window.addEventListener('scroll', checkScroll);
+            window.addEventListener('load', checkScroll);
+        });
+        

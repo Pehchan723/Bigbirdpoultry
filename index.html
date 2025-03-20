@@ -30,15 +30,14 @@
         <a href="about.html">About Us</a>
         <a href="product.html">Products</a>
         <a href="#job">Job Application</a>
-        <a href="#trade">Trade Application</a>
+        <a href="trade.html">Trade Application</a>
         <a href="#contact">Contact</a>
         <a href="#survey">BIG BIRD Colleagues Canteen Survey</a>
     </nav>
 </div>
     <!-- Hero Section with Welcome Text -->
     <section class="hero">
-        <h1>BIGBIRD</h1>
-        <h2>POULTRY</h2>
+        <h1>BIGBIRD POULTRY</h1>
         <h3>Fresh Chicken Always</h3>
         <p>FRESH | QUALITY | ASSURED</p>
         <p>JUST IN TIME CHICKEN</p>
@@ -77,7 +76,10 @@
               <img src="Asset/whole-chicken.png" alt="Whole Chicken">
               <h3>Whole Chicken</h3>
               <p>A brief description of Whole Chicken.</p>
-              <a href="#" class="read-more">Read More</a>
+              <a href="product.html">
+                <button>Read More</button>
+            </a>
+            
             </div>
             
             <!-- Product Item 2 -->
@@ -85,7 +87,9 @@
               <img src="Asset/leg.jpg" alt="Chicken Legs">
               <h3>Chicken Legs</h3>
               <p>A brief description of Chicken Legs.</p>
-              <a href="#" class="read-more">Read More</a>
+              <a href="product.html">
+                <button>Read More</button>
+            </a>
             </div>
             
             <!-- Product Item 3 -->
@@ -93,7 +97,9 @@
               <img src="Asset/leg.jpg" alt="Chicken Thigh">
               <h3>Chicken Wings</h3>
               <p>A brief description of Chicken Thigh.</p>
-              <a href="#" class="read-more">Read More</a>
+              <a href="product.html">
+                <button>Read More</button>
+            </a>
             </div>
             
             <!-- Product Item 4 -->
@@ -101,7 +107,9 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken Liver</h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
               <!-- Product Item 5 -->
@@ -109,7 +117,9 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken Neck</h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
               <!-- Product Item 6 -->
@@ -117,7 +127,9 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken Feet</h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
               <!-- Product Item 7 -->
@@ -125,7 +137,9 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken Gizzard</h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
               <!-- Product Item 8 -->
@@ -133,7 +147,9 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken Chest</h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
               <!-- Product Item 9 -->
@@ -141,16 +157,389 @@
                 <img src="Asset/leg.jpg" alt="Chicken Thigh">
                 <h3>Chicken </h3>
                 <p>A brief description of Chicken Thigh.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="product.html">
+                    <button>Read More</button>
+                </a>
               </div>
 
-        </div>
-      </section>
-      
-    
-    
+             
+            
+        
     </section>
-    <footer>
+</style>
+</head>
+<body>
+
+<div class="booking-section">
+  <!-- Product Carousel (Left Side) -->
+  <div class="product-carousel">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="Asset/chicken.jpg" alt="Free Range Chicken">
+          <div class="carousel-caption">Free Range Chicken</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="Asset/chicken-vector.png" alt="Farm Fresh Eggs">
+          <div class="carousel-caption">Farm Fresh Eggs</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/api/placeholder/600/400" alt="Organic Duck">
+          <div class="carousel-caption">Organic Duck</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/api/placeholder/600/400" alt="Turkey">
+          <div class="carousel-caption">Turkey</div>
+        </div>
+        <div class="carousel-slide">
+          <img src="/api/placeholder/600/400" alt="Quail Eggs">
+          <div class="carousel-caption">Quail Eggs</div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+  
+ <!-- Booking Form (Right Side) -->
+<div class="booking-form" id="booking-form">
+    <h2>Book Your Products</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="deliveryDate">Preferred Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Select Products:</label>
+        <div class="products-container">
+          <div class="product-item">
+            <img src="Asset/whole-chicken.jpg" alt="Free Range Chicken" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Free Range Chicken</div>
+              <div class="product-price">$15.99/kg</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="chicken">-</div>
+                <input type="number" class="quantity-input" id="quantity-chicken" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="chicken">+</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="Asset/whole-chicken.jpg" alt="Farm Fresh Eggs" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Farm Fresh Eggs</div>
+              <div class="product-price">$4.99/dozen</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="eggs">-</div>
+                <input type="number" class="quantity-input" id="quantity-eggs" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="eggs">+</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/api/placeholder/120/120" alt="Organic Duck" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Organic Duck</div>
+              <div class="product-price">$18.99/kg</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="duck">-</div>
+                <input type="number" class="quantity-input" id="quantity-duck" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="duck">+</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/api/placeholder/120/120" alt="Turkey" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Turkey</div>
+              <div class="product-price">$12.99/kg</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="turkey">-</div>
+                <input type="number" class="quantity-input" id="quantity-turkey" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="turkey">+</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/api/placeholder/120/120" alt="Quail Eggs" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Quail Eggs</div>
+              <div class="product-price">$7.99/dozen</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="quail">-</div>
+                <input type="number" class="quantity-input" id="quantity-quail" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="quail">+</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/api/placeholder/120/120" alt="Chicken Sausages" class="product-image">
+            <div class="product-details">
+              <div class="product-name">Chicken Sausages</div>
+              <div class="product-price">$9.99/pack</div>
+              <div class="quantity-control">
+                <div class="quantity-btn minus" data-product="sausages">-</div>
+                <input type="number" class="quantity-input" id="quantity-sausages" value="0" min="0" max="20">
+                <div class="quantity-btn plus" data-product="sausages">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="selected-products">
+        <h3>Your Order Summary:</h3>
+        <div id="selectedProductsList"></div>
+        <div id="totalAmount" class="form-group" style="text-align: right; font-weight: bold; margin-top: 10px;"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="specialInstructions">Special Instructions:</label>
+        <textarea id="specialInstructions" name="specialInstructions" rows="4"></textarea>
+      </div>
+      
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Auto-scrolling carousel setup
+    const carouselTrack = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelector('.carousel-indicators');
+    let currentIndex = 0;
+    let slideWidth = slides[0].clientWidth;
+    
+    // Set the initial width of the track
+    carouselTrack.style.width = `${slides.length * 100}%`;
+    
+    // Create indicators
+    slides.forEach((_, index) => {
+      const indicator = document.createElement('div');
+      indicator.classList.add('indicator');
+      if (index === 0) indicator.classList.add('active');
+      indicator.addEventListener('click', () => {
+        goToSlide(index);
+      });
+      indicators.appendChild(indicator);
+    });
+    
+    // Function to go to a specific slide
+    function goToSlide(index) {
+      carouselTrack.style.transform = `translateX(-${index * (100 / slides.length)}%)`;
+      document.querySelectorAll('.indicator').forEach((ind, i) => {
+        if (i === index) {
+          ind.classList.add('active');
+        } else {
+          ind.classList.remove('active');
+        }
+      });
+      currentIndex = index;
+    }
+    
+    // Auto-scroll function
+    function autoScroll() {
+      if (currentIndex === slides.length - 1) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      goToSlide(currentIndex);
+    }
+    
+    // Start auto-scrolling
+    let autoScrollInterval = setInterval(autoScroll, 5000);
+    
+    // Pause auto-scrolling when hovering over carousel
+    document.querySelector('.carousel-container').addEventListener('mouseenter', () => {
+      clearInterval(autoScrollInterval);
+    });
+    
+    // Resume auto-scrolling when mouse leaves carousel
+    document.querySelector('.carousel-container').addEventListener('mouseleave', () => {
+      autoScrollInterval = setInterval(autoScroll, 5000);
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      slideWidth = slides[0].clientWidth;
+      goToSlide(currentIndex);
+    });
+    
+    // Product selection functionality
+    const minusBtns = document.querySelectorAll('.quantity-btn.minus');
+    const plusBtns = document.querySelectorAll('.quantity-btn.plus');
+    const quantityInputs = document.querySelectorAll('.quantity-input');
+    const selectedProductsList = document.getElementById('selectedProductsList');
+    const totalAmountElement = document.getElementById('totalAmount');
+    
+    // Product prices mapping
+    const productPrices = {
+      'chicken': 15.99,
+      'eggs': 4.99,
+      'duck': 18.99,
+      'turkey': 12.99,
+      'quail': 7.99,
+      'sausages': 9.99
+    };
+    
+    // Product names mapping
+    const productNames = {
+      'chicken': 'Free Range Chicken',
+      'eggs': 'Farm Fresh Eggs',
+      'duck': 'Organic Duck',
+      'turkey': 'Turkey',
+      'quail': 'Quail Eggs',
+      'sausages': 'Chicken Sausages'
+    };
+    
+    // Product units mapping
+    const productUnits = {
+      'chicken': 'kg',
+      'eggs': 'dozen',
+      'duck': 'kg',
+      'turkey': 'kg',
+      'quail': 'dozen',
+      'sausages': 'pack'
+    };
+    
+    // Set up event listeners for minus buttons
+    minusBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const product = this.dataset.product;
+        const input = document.getElementById(`quantity-${product}`);
+        let value = parseInt(input.value);
+        if (value > 0) {
+          input.value = value - 1;
+          updateOrderSummary();
+        }
+      });
+    });
+    
+    // Set up event listeners for plus buttons
+    plusBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const product = this.dataset.product;
+        const input = document.getElementById(`quantity-${product}`);
+        let value = parseInt(input.value);
+        if (value < 20) {
+          input.value = value + 1;
+          updateOrderSummary();
+        }
+      });
+    });
+    
+    // Set up event listeners for direct input changes
+    quantityInputs.forEach(input => {
+      input.addEventListener('change', function() {
+        updateOrderSummary();
+      });
+    });
+    
+    // Update the order summary
+    function updateOrderSummary() {
+      selectedProductsList.innerHTML = '';
+      let totalAmount = 0;
+      
+      quantityInputs.forEach(input => {
+        const quantity = parseInt(input.value);
+        if (quantity > 0) {
+          const productId = input.id.split('-')[1];
+          const productName = productNames[productId];
+          const price = productPrices[productId];
+          const unit = productUnits[productId];
+          const itemTotal = price * quantity;
+          totalAmount += itemTotal;
+          
+          // Create selected item element
+          const selectedItem = document.createElement('div');
+          selectedItem.className = 'selected-item';
+          selectedItem.innerHTML = `
+            <div>
+              <strong>${productName}</strong> - ${quantity} ${unit === 'dozen' ? 'dozen' : unit}
+              <div>$${price.toFixed(2)}/${unit} × ${quantity} = $${itemTotal.toFixed(2)}</div>
+            </div>
+            <button type="button" class="remove-btn" data-product="${productId}">Remove</button>
+          `;
+          selectedProductsList.appendChild(selectedItem);
+        }
+      });
+      
+      // Update total amount
+      if (totalAmount > 0) {
+        totalAmountElement.innerHTML = `Total: $${totalAmount.toFixed(2)}`;
+      } else {
+        totalAmountElement.innerHTML = '';
+        selectedProductsList.innerHTML = '<p>No products selected</p>';
+      }
+      
+      // Add event listeners to remove buttons
+      document.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const product = this.dataset.product;
+          document.getElementById(`quantity-${product}`).value = 0;
+          updateOrderSummary();
+        });
+      });
+    }
+    
+    // Form submission
+    const bookingForm = document.getElementById('bookingForm');
+    bookingForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Check if any products are selected
+      let hasProducts = false;
+      quantityInputs.forEach(input => {
+        if (parseInt(input.value) > 0) {
+          hasProducts = true;
+        }
+      });
+      
+      if (!hasProducts) {
+        alert('Please select at least one product.');
+        return;
+      }
+      
+      // Here you would typically send the form data to your server
+      alert('Booking submitted successfully! We will contact you shortly to confirm your order.');
+      
+      // Reset form
+      bookingForm.reset();
+      quantityInputs.forEach(input => {
+        input.value = 0;
+      });
+      updateOrderSummary();
+    });
+    
+    // Initialize order summary
+    updateOrderSummary();
+  });
+</script>
+
+    <section>
         <footer>
             <!-- Left Section -->
             <div class="footer-section">
